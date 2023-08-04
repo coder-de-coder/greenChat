@@ -11,6 +11,7 @@ const ws = require('ws');
 const fs = require('fs');
 
 dotenv.config();
+mongoose.set('strictQuery', true)
 mongoose.connect(process.env.MONGO_URL, (err) => {
   if (err) throw err;
 });

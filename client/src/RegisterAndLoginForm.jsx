@@ -15,7 +15,7 @@ export default function RegisterAndLoginForm() {
     setId(data.id);
   }
   return (
-    <div className="bg-blue-50 h-screen flex items-center">
+    <div className="bg-green-50 h-screen flex items-center">
       <form className="w-64 mx-auto mb-12" onSubmit={handleSubmit}>
         <input value={username}
                onChange={ev => setUsername(ev.target.value)}
@@ -26,7 +26,7 @@ export default function RegisterAndLoginForm() {
                type="password"
                placeholder="password"
                className="block w-full rounded-sm p-2 mb-2 border" />
-        <button className="bg-blue-500 text-white block w-full rounded-sm p-2">
+        <button className="bg-green-500 text-white block w-full rounded-sm p-2">
           {isLoginOrRegister === 'register' ? 'Register' : 'Login'}
         </button>
         <div className="text-center mt-2">
@@ -48,6 +48,9 @@ export default function RegisterAndLoginForm() {
           )}
         </div>
       </form>
+      <div>
+        
+      </div>
     </div>
   );
 }
